@@ -1,1 +1,1 @@
-require('shorent.core')
+require('core')
