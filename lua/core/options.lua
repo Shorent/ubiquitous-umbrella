@@ -1,6 +1,6 @@
 local options = {
     number = true,
-	relativenumber = true,
+        relativenumber = true,
 	colorcolumn = '100',
 	tabstop = 4,
     shiftwidth = 4,
@@ -11,4 +11,13 @@ local options = {
 
 for key, value in pairs(options) do
 	vim.opt[key] = value
+end
+
+local globalOptions = {
+    mapleader = " ",
+    maplocalleader = "\\"
+}
+
+for key, value in pairs(options) do
+	vim.g[key] = value
 end
